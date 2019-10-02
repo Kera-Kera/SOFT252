@@ -10,5 +10,17 @@ package bankentities;
  * @author bdaniel
  */
 public class BankAccount {
+    private double balance;
+    private double overdraft;
+    private String holder; 
     
+    public BankAccount(String holder) {
+        this.holder = holder;
+        this.overdraft = 500;
+        this.balance = 100;
+    }
+    public void depositMoney(int amount) {
+        balance += amount;
+    }
 }
+
