@@ -32,6 +32,13 @@ public class StageResults {
     /*
      * Returns the total mark added so far
      */
+    
+    public void addModuleMark(int credits, double mark)
+    {
+        totalCredits +=credits;
+        totalMarks += mark * (credits / 10);
+    }
+    
     public double getTotalMarks() {
         return totalMarks;
     }
@@ -44,12 +51,47 @@ public class StageResults {
         this.stage2Average = stage2Average;
     }
     
+    public double calculateAverageSoFar(){
+        double average;
+        
+        average = totalMarks/ (totalCredits / 10.0);
+        average = Math.round(average * 100) / 100.0;
+        
+        return average;               
+    }
+    
     /*
      * Returns TRUE of 120 credits have been entered, FALSE otherwise.
      */
     public boolean isComplete() {
         return (totalCredits == MAXCREDITS);
     }
+    
+    public String predictClass(){
+        double overallAverage = calculateAverageSoFar();
+        String degree;
+        
+        if (stage2Average != 0)
+            overallAverage = Math.round(overallAverage * 0.7 * 100) / 100.0 + Math.round(stage2Average * 0.3 * 100) / 100.0;
+        
+        if (totalCredits < MAXCREDITS)
+            degree = "Insufficient credits";
+        else if (overallAverage == 0)
+            degree = "No marks";
+        else if (overallAverage < 40)
+            degree = "Fail";
+        else if (overallAverage < 50)
+            degree = "3rd";
+        else if (overallAverage < 60)
+            degree = "Lower 2nd";
+        else if (overallAverage < 70)
+            degree = "Upper 2nd";
+        else
+            degree = "1st";
+        
+        return degree;
+    }
+        
     
     /*
      * Resets the instance variables to zero, destroying any existing
