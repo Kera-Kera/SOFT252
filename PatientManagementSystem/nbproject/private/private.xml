@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Patients/Patient_MainForm.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/AddDoctor_Admin_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Doctors/OrderMedicine_Doctor_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Secretarys/AccountApproval_Secretary_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/RemoveDoctor_Admin_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Doctors/PatientNotes_Doctor_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/RemoveSecretary_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Doctors/ViewAppointments_Doctor_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/AddPatient_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Secretarys/ApproveAccountRemoval_Secretary_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Secretarys/RemovePatient_Secretary_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Patients/RateDoctor_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Doctors/CreateAppointment_Doctor_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/ProvideFeedback_Admin_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Patients/CheckPrescription_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Doctors/Doctor_MainForm.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/AddSecretary_Admin_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Patients/AppointmentRequest_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Patients/ViewHistory_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Doctors/MakePrescription_Doctor_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Secretarys/Secretarys_MainForm.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Secretarys/GivePrescription_Secretary_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Doctors/ViewPatientHistory_Doctor_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Patients/RequestAccountRemoval_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Patients/ViewAppointment_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Login_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/ViewRatings_Admin_Form.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Administrators/Admin_MainForm.java</file>
+            <file>file:/E:/cex/SOFT252/PatientManagementSystem/src/patientmanagementsystem/Secretarys/CreateAppointment_Secretary_Form.java</file>
+        </group>
+    </open-files>
+</project-private>
