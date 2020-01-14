@@ -5,6 +5,8 @@
  */
 package patientmanagementsystem.Administrators;
 
+import patientmanagementsystem.Account;
+
 
 
 /**
@@ -123,7 +125,7 @@ public class AddDoctor_Admin_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField_NameActionPerformed
 
     private void jButton_SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SubmitActionPerformed
-        
+        Account account = new Account.Builder(2).addName(jTextField_Name.getText()).addAddress(jTextField_Address.getText()).build();
     }//GEN-LAST:event_jButton_SubmitActionPerformed
 
     /**

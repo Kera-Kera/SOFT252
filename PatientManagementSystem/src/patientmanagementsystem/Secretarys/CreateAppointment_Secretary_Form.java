@@ -6,6 +6,8 @@
 
 package patientmanagementsystem.Secretarys;
 
+import patientmanagementsystem.Appointment;
+
 /**
  *
  * @author cex
@@ -127,7 +129,7 @@ public class CreateAppointment_Secretary_Form extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SubmitActionPerformed
-        // TODO add your handling code here:
+        Appointment appointment = new Appointment.CreateAppointment(Integer.parseInt(jTextField_DoctorID.getText()) , Integer.parseInt(jTextField_PatientID.getText()) , jTextField_Date.getText(), jTextField_Time.getText()).build();
     }//GEN-LAST:event_jButton_SubmitActionPerformed
 
     /**

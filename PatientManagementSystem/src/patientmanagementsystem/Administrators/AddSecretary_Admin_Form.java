@@ -5,6 +5,8 @@
  */
 package patientmanagementsystem.Administrators;
 
+import patientmanagementsystem.Account;
+
 /**
  *
  * @author cex
@@ -27,20 +29,20 @@ public class AddSecretary_Admin_Form extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTextField_PatientAddress = new javax.swing.JTextField();
+        jTextField_SecAddress = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField_PatientName = new javax.swing.JTextField();
+        jTextField_SecName = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jTextField_PatientAddress.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField_PatientAddress.setText("-");
-        jTextField_PatientAddress.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_SecAddress.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField_SecAddress.setText("-");
+        jTextField_SecAddress.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_PatientAddressActionPerformed(evt);
+                jTextField_SecAddressActionPerformed(evt);
             }
         });
 
@@ -48,11 +50,11 @@ public class AddSecretary_Admin_Form extends javax.swing.JFrame {
 
         jLabel4.setText("Secretary Name");
 
-        jTextField_PatientName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField_PatientName.setText("-");
-        jTextField_PatientName.addActionListener(new java.awt.event.ActionListener() {
+        jTextField_SecName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        jTextField_SecName.setText("-");
+        jTextField_SecName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField_PatientNameActionPerformed(evt);
+                jTextField_SecNameActionPerformed(evt);
             }
         });
 
@@ -60,6 +62,11 @@ public class AddSecretary_Admin_Form extends javax.swing.JFrame {
         jLabel1.setText("Add Secretary");
 
         jButton1.setText("Submit");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -78,11 +85,11 @@ public class AddSecretary_Admin_Form extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(jLabel2)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField_PatientAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTextField_SecAddress, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addComponent(jLabel4)
                                     .addGap(38, 38, 38)
-                                    .addComponent(jTextField_PatientName, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(jTextField_SecName, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(110, 110, 110))))
         );
         layout.setVerticalGroup(
@@ -93,11 +100,11 @@ public class AddSecretary_Admin_Form extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField_PatientName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_SecName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField_PatientAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_SecAddress, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(43, 43, 43)
                 .addComponent(jButton1)
                 .addContainerGap(63, Short.MAX_VALUE))
@@ -106,13 +113,17 @@ public class AddSecretary_Admin_Form extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField_PatientAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_PatientAddressActionPerformed
+    private void jTextField_SecAddressActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_SecAddressActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_PatientAddressActionPerformed
+    }//GEN-LAST:event_jTextField_SecAddressActionPerformed
 
-    private void jTextField_PatientNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_PatientNameActionPerformed
+    private void jTextField_SecNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField_SecNameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField_PatientNameActionPerformed
+    }//GEN-LAST:event_jTextField_SecNameActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Account account = new Account.Builder(1).addName(jTextField_SecName.getText()).addAddress(jTextField_SecAddress.getText()).build();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,7 +196,7 @@ public class AddSecretary_Admin_Form extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField_PatientAddress;
-    private javax.swing.JTextField jTextField_PatientName;
+    private javax.swing.JTextField jTextField_SecAddress;
+    private javax.swing.JTextField jTextField_SecName;
     // End of variables declaration//GEN-END:variables
 }

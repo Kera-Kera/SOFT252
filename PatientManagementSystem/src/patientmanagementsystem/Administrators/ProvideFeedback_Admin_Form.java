@@ -6,6 +6,8 @@
 
 package patientmanagementsystem.Administrators;
 
+import patientmanagementsystem.DoctorFeedback;
+
 /**
  *
  * @author cex
@@ -108,7 +110,7 @@ public class ProvideFeedback_Admin_Form extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SaveActionPerformed
-        // TODO add your handling code here:
+        DoctorFeedback doctorFeedback = new DoctorFeedback.CreateFeedback(Integer.parseInt(jTextField_PatientID.getText()), jTextArea_Notes.getText()).build();
     }//GEN-LAST:event_jButton_SaveActionPerformed
 
     /**
