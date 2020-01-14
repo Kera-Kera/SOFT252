@@ -5,6 +5,7 @@
  */
 package patientmanagementsystem.Doctors;
 
+import javax.swing.JOptionPane;
 import patientmanagementsystem.Appointment;
 
 /**
@@ -147,7 +148,12 @@ public class CreateAppointment_Doctor_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField_PatientIDActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try{
         Appointment appointment = new Appointment.CreateAppointment(11, Integer.parseInt(jTextField_PatientID.getText()) , jTextField_Date.getText(), jTextField_Time.getText()).build();
+        }
+        catch(NumberFormatException exception){
+            JOptionPane.showMessageDialog(this, "Please only use Numbers for the IDs");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

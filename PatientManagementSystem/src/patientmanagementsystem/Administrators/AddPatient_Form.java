@@ -5,6 +5,7 @@
  */
 package patientmanagementsystem.Administrators;
 
+import javax.swing.JOptionPane;
 import patientmanagementsystem.Account;
 
 /**
@@ -152,7 +153,12 @@ public class AddPatient_Form extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField_PatientAddressActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        try{
         Account account = new Account.Builder(0).addName(jTextField_PatientName.getText()).addAddress(jTextField_PatientAddress.getText()).addSex(jComboBox_Sex.getSelectedItem().toString()).addAge(Integer.parseInt(jTextField_Age.getText())).build();
+        }
+        catch(NumberFormatException exception){
+            JOptionPane.showMessageDialog(this, "Please only use Numbers for Age");
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

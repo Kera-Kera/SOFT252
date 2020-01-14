@@ -5,6 +5,7 @@
  */
 package patientmanagementsystem.Patients;
 
+import javax.swing.JOptionPane;
 import patientmanagementsystem.DoctorFeedback;
 
 /**
@@ -115,7 +116,12 @@ public class RateDoctor_Form extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_SubmitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SubmitActionPerformed
+        try{
         DoctorFeedback doctorFeedback = new DoctorFeedback.CreateFeedback(Integer.parseInt(jTextField_DoctorID.getText()), jTextField_Notes.getText()).AddRating(jComboBox_Rating.getSelectedItem().toString()).build();
+        }
+        catch(NumberFormatException exception){
+            JOptionPane.showMessageDialog(this, "Please only use Numbers for the IDs");
+        }
     }//GEN-LAST:event_jButton_SubmitActionPerformed
 
     /**

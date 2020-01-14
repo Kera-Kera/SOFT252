@@ -6,6 +6,7 @@
 
 package patientmanagementsystem.Administrators;
 
+import javax.swing.JOptionPane;
 import patientmanagementsystem.DoctorFeedback;
 
 /**
@@ -110,7 +111,12 @@ public class ProvideFeedback_Admin_Form extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton_SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SaveActionPerformed
+        try{
         DoctorFeedback doctorFeedback = new DoctorFeedback.CreateFeedback(Integer.parseInt(jTextField_PatientID.getText()), jTextArea_Notes.getText()).build();
+        }
+        catch(NumberFormatException exception){
+            JOptionPane.showMessageDialog(this, "Please only use Numbers for your ID");
+        }
     }//GEN-LAST:event_jButton_SaveActionPerformed
 
     /**
